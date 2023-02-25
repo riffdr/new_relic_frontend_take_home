@@ -78,9 +78,8 @@ If you want to switch back to another version of node, say it 12, then run `sudo
 * Dimensions are harnessed by a 5px base unit, available at the [document root](stylesheets/tokens/_baseUnit.scss) and controller by a [baseUnitFactor helper](stylesheets/utils/_baseUnitFactor.scss).
 * Compiled with dart sass, avoiding the much slower Ruby Sass.
 * Naming convention:
-  * I have followed none, although I have used BEM and Stylus.
-  * I have favored specificity and simplicity.
-  * Ideally the markup, and css should live (except for the main html containers header, main, footer) within Custom Elements within ShadowDom which provides style encapsulation are requires zero specificity.
+  * I have followed none, although I have used BEM and Stylus in the past, here I have favored specificity and simplicity.
+  * Ideally the markup, and css should live (except for the main html containers header, main, footer) within Custom Elements within their ShadowDom which provides style encapsulation are requires zero specificity.
 
 ### 3.4 Data serving
 * Served as a JS Module by the [data provider](packages/dataProvider/package.json)
