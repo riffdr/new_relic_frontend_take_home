@@ -149,4 +149,4 @@ yarn test:unit
 * I would have liked to implement Cypress.io or Playwright and write a couple of integration or functional testing.
 * More UI Tests written.
 * Linters (eslint, stylelint).
-* I was instructed to submit this as a zip file and not as a repo, so obviously in a future development I have some versioning guardrails.
+* I was ordered to submit this as a zip file and not as a repo, so obviously in future development I would have some versioning guardrails such as dependency version checker. 
