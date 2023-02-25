@@ -1,7 +1,7 @@
 {
   "name": "@miguelzarate/component",
   "version": "1.0.0",
-  "description": "Abstract Component to be provide a common, implemented functionality in all the implementations of the web components ",
+  "description": "Abstract Component to be provide a common, implemented functionality in all the implementations of the other JS UI components ",
   "main": "index.js",
   "files": [],
   "private": true,
