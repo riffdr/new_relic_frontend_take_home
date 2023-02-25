@@ -1,0 +1,6 @@
+@function baseUnitFactor($value: 1) {
+  @if ($value == 1) {
+    @return var(--nr-base-unit);
+  }
+  @return calc(var(--nr-base-unit) * #{$value});
+}

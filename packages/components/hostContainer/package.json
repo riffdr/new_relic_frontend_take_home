@@ -1,0 +1,11 @@
+{
+  "name": "@miguelzarate/host-container",
+  "version": "1.0.0",
+  "description": "Abstract class created to manage the data changes in UI Component Classes",
+  "main": "index.js",
+  "files": [],
+  "private": true,
+  "scripts": {},
+  "author": "Miguel Zarate",
+  "license": "UNLICENSED"
+}

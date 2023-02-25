@@ -1,0 +1,27 @@
+@import '../utils/normalize';
+@import '../tokens/baseUnit';
+@import '../tokens/colorPalette';
+@import '../utils/baseUnitFactor';
+
+body {
+  background-color: var(--nr-color-grey);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Helvetica Neue', sans-serif;
+  gap: baseUnitFactor(6);
+  line-height: 1.2;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: baseUnitFactor(6);
+  width: 100%;
+}
+
+main, header {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+

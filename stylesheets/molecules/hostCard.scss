@@ -1,0 +1,20 @@
+@import '../utils/baseUnitFactor';
+
+.nr-host-card {
+  box-sizing: border-box;
+  background-color: var(--nr-color-white);
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  gap: 23px;
+  text-align: left;
+  padding: baseUnitFactor(6);
+  width: 100%;
+
+  > h2 {
+    color: var(--nr-color-black);
+    margin: 0 0;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

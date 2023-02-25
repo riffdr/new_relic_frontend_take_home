@@ -1,0 +1,39 @@
+@import '../utils/baseUnitFactor';
+
+label.nr-view-switcher {
+  height: auto;
+  display: inline-flex;
+
+  &:hover, &:active {
+    cursor: pointer;
+  }
+
+  .nr-view-switcher-checkbox {
+    box-sizing: border-box;
+    display: inline-flex;
+    position: relative;
+    background-color: var(--nr-color-white);
+    border-radius: 2px;
+    border: 1.5px solid var(--nr-color-grey-125);
+    box-shadow: 0.1px 0.1px 1.1px 0.1px var(--nr-color-grey-125);
+    height: baseUnitFactor(4);
+    margin-right: baseUnitFactor(2);
+    width: baseUnitFactor(4);
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: '';
+      border-radius: 1.5px;
+      background-color: transparent;
+      position: absolute;
+      height: baseUnitFactor(2.5);
+      width: baseUnitFactor(2.5);
+    }
+  }
+}
+
+
+input.nr-view-switcher {
+  display: none;
+}

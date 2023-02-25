@@ -1,0 +1,11 @@
+@import '../utils/baseUnitFactor';
+
+.nr-host-container {
+  display:block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  gap: baseUnitFactor(6);
+  height: auto;
+}
+

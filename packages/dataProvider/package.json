@@ -1,0 +1,11 @@
+{
+  "name": "@miguelzarate/data-provider",
+  "version": "1.0.0",
+  "description": "A module to provide the data for the task as a js module an avoid the usage of REST calls",
+  "main": "index.js",
+  "files": [],
+  "private": true,
+  "scripts": {},
+  "author": "Miguel Zarate",
+  "license": "UNLICENSED"
+}

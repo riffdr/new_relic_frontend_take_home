@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Relic - Miguel Zarate</title>
+  <meta property="og:title" content="New Relic - Miguel Zarate">
+  <meta name="description" content="Task for the New Relic recruitment process of Miguel Zarate">
+  <meta property="og:description" content="Task for the New Relic recruitment process of Miguel Zarate">
+  <link rel="icon" href="./favicon.ico">
+  <link href="https://fonts.cdnfonts.com/s/29109/HelveticaNeueLTProIt.woff" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+  <!-- I could have gone for using customEvents to communicate between label.nr-view-switcher and div.nr-host-container,
+  but I wanted to use this to display my awareness that style changes based on user state interactions (click, hover... ) can
+  be captured and fully executed with CSS, hence why this <input> element at the top of the document body.
+  -->
+  <input class="nr-view-switcher" type="checkbox" id="list" name="viewmode" value="list">
+  <header>
+    <section class="nr-heading-section">
+      <h1>
+        Apps by Host
+      </h1>
+      <span class="nr-heading-section-user"  >
+        for user
+      </span>
+    </section>
+    <span class="nr-heading-email" >
+          averylongemailadress@companyname.com
+    </span>
+    <label class="nr-view-switcher" for="list">
+      <span class="nr-view-switcher-checkbox" ></span>
+      <span type="grid">Show as an awesome Grid</span>
+      <span type="list">Show as list</span>
+    </label>
+  </header>
+  <main>
+    <div class="nr-host-container"></div>
+  </main>
+  <footer>
+    <!-- Why this import map and shim:
+     1. Provided data is static and large (2.5MB), and it was stated that it was not to be served from any kind of server
+     2. JS module requests are far more efficient to pass static data rather than with an Ajax request call
+     3. Since it is not an AJAX call but rather a request to the FileSystem, it gets cached automatically via HTTP2
+     4. Es-module-shims version provides polyfill support (Safari does not support import maps)
+    -->
+    <script type="importmap-shim">
+      {
+        "imports": {
+          "@miguelzarate/data-provider": "./dist/dataProvider/index.js"
+        }
+      }
+
+    </script>
+    <script src="./node_modules/es-module-shims/dist/es-module-shims.js"></script>
+    <script type="module-shim" src="./dist/components/hostContainer/index.js"></script>
+  </footer>
+</body>
+</html>

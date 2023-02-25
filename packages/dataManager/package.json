@@ -1,0 +1,11 @@
+{
+  "name": "@miguelzarate/data-manager",
+  "version": "1.0.0",
+  "description": "Data Manager, retrieves and manages all the App and Host data",
+  "main": "index.ts",
+  "files": [],
+  "private": true,
+  "scripts": {},
+  "author": "Miguel Zarate",
+  "license": "UNLICENSED"
+}
